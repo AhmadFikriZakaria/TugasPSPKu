@@ -1,12 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Ahmad Fikri Zakaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        body {
+            background-color: #000B1D;
+            line-height: 1.6;
+        }
+
+        /* Sticky Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: #000b1d;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #717171;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            gap: 60px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #717171;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 5%;
+        }
+
+        .left {
+            max-width: 45%;
+        }
+
+        .left h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .left p {
+            font-size: 18px;
+            font-weight: 300;
+            color: #A7A9BE;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+        }
+
+        .cta-buttons button {
+            padding: 12px 20px;
+            background-color: #6246EA;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons button:hover {
+            background-color: #4D3ABF;
+        }
+
+        .right img {
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .right img:hover {
+            transform: scale(1.05);
+        }
+
+        .project, .about {
+            text-align: center;
+            padding: 80px 10%;
+        }
+
+        .project h1, .about h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .pembungkus-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 320px;
+            padding: 30px;
+            background-color: #76859d;
+            border-radius: 10px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #D1D1D1;
+        }
+
+        /* About Section */
+        .about p {
+            font-size: 18px;
+            color: #A7A9BE;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        .about ul {
+            margin-top: 20px;
+            list-style-type: disc;
+            color: #A7A9BE;
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #111;
+            padding: 30px 10%;
+            color: #A7A9BE;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #A7A9BE;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #A7A9BE;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #717171;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>hello world </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, veritatis. Vitae corporis quasi architecto tempore eaque error, placeat eligendi optio natus fugiat officia est eius ad quo quae, iure ipsum!</p>
+    <!-- Sticky Navbar -->
+    <header class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#project">Proyek</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#footer">Kontak</a></li>
+        </ul>
+    </header>
+
+    <section class="content">
+        <div class="left">
+            <h1>Ahmad Fikri Zakarittaaaaaaaaaaaaaa</h1>
+            <p>Selamat datang di portofolio saya! Saya seorang pengembang antusias yang berfokus pada pengembangan aplikasi web dan solusi digital inovatif. Mari jelajahi karya saya yang bertujuan memberikan nilai lebih melalui teknologi.</p><br>
+            <div class="cta-buttons">
+                <a href="https://github.com/AhmadFikriZakaria-create" target="_blank"><button>GitHub</button></a>
+                <a href="#footer"><button>Kontak Saya</button></a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="/img/myphoto.jpg" alt="Foto Ahmad Fikri Zakaria">
+        </div>
+    </section>
+    <hr>
+
+    <!-- Project Section -->
+    <section class="project" id="project">
+        <h1>Proyek Saya</h1>
+        <div class="pembungkus-card">
+            <div class="card">
+                <h3>Website Portfolio Sederhana</h3>
+                <p>Saya  telah membuat website portfolio sederhana menggunakan HTML dan framework CSS, yakni Bootstrap. Saya membuatnya dengan mengikuti video yang ada di WPU.</p>
+
+            </div>
+            <div class="card">
+                <h3>Membuat CRUD di Python</h3>
+                <p>Saya berhasil membuat projek sistem manajemen data dengan konsep CRUD menggunakan Python. Saya mempelajarinya dari playlist Python dasar yang ada di Kelas Terbuka</p>
+            </div>
+            <div class="card">
+                <h3>Website Portfolio Lain</h3>
+                <p>Portofolio sederhana yang saya buat adalah halaman ini. Ini  adalah contoh portofolio yang saya buat dengan menggunakan HTML dan CSS dengan  mengikuti tutorial di PSP.</p>
+
+
+            </div>
+        </div><br>
+    </section>
+    <hr>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>Tentang Saya</h1>
+        <p>Halo! Saya Ahmad Fikri Zakaria, seorang developer dengan minat besar pada teknologi dan desain web. Saya memiliki keahlian dalam HTML, CSS, dan JavaScript. Dengan pengalaman beberapa tahun dalam pengembangan web, saya bersemangat untuk menciptakan solusi digital yang berdampak positif.</p>
+        <ul>
+            <li>Pengalaman dalam pengembangan front-end dan back-end.</li>
+            <li>Keterampilan dalam penggunaan framework modern seperti React dan Vue.</li>
+            <li>Bersemangat untuk belajar teknologi baru dan mengimplementasikannya dalam proyek nyata.</li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <p>&copy; 2024 Ahmad Fikri Zakaria. Semua Hak Dilindungi.</p>
+        <p>Hubungi saya di:</p>
+        <div class="social-icons">
+            <a href="https://github.com/AhmadFikriZakaria-create" target="_blank">GitHub  |</a>
+            <a href="https://wa.me/6285768931341" target="_blank">WhatsApp  |</a>
+            <a href="https://www.linkedin.com/in/ahmad-fikri-zakaria-768141321" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
 </body>
+
 </html>
